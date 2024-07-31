@@ -1,0 +1,13 @@
+function [wFrame1,wFrame2,wLLM1,wLLM2]=ImportanceMatrixLLM
+xdata=xlsread('È±Ê§1Ö¡ÎÞÌî³ä.xlsx');
+xdata(isnan(xdata))=0;
+wFrame1=xdata;
+xdata=xlsread('È±Ê§2Ö¡ÎÞÌî³ä.xlsx');
+xdata(isnan(xdata))=0;
+wFrame2=xdata;
+xdata=xlsread('¶ªÊ§1Ö¡²¢Ìî³ä1-100.xlsx');
+xdata(isnan(xdata))=0;
+wLLM1=xdata;
+xdata=xlsread('¶ªÊ§2Ö¡²¢Ìî³ä1-100.xlsx');
+xdata(isnan(xdata))=0;
+wLLM2=xdata;
